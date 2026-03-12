@@ -1,0 +1,43 @@
+adspower:
+  api_base: "http://127.0.0.1:50325"
+  profile_id: "your_profile_id"
+  auto_create: false
+  group_id: ""
+  profile_name: ""
+  open_args:
+    - "--disable-notifications"
+  launch_timeout_sec: 60
+
+instagram:
+  username: "your_instagram_username"
+  password: "your_instagram_password"
+  target_username: "target_username"
+  message: "你好，这是一条自动化测试私信。"
+  login_timeout_sec: 120
+
+gmail:
+  address: "your_gmail@gmail.com"
+  password: "your_gmail_app_password_or_password"
+  search_keywords:
+    - "Instagram"
+    - "Verify login"
+    - "It was me"
+  sender_keywords:
+    - "security@mail.instagram.com"
+    - "instagram"
+    - "meta"
+  confirm_keywords:
+    - "It was me"
+    - "Verify"
+    - "Confirm"
+    - "This was me"
+  link_host_keywords:
+    - "instagram.com"
+    - "meta.com"
+    - "accountscenter"
+  poll_interval_sec: 10
+  poll_timeout_sec: 180
+
+runtime:
+  headless: false
+  dry_run: false
